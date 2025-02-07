@@ -1,0 +1,140 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Main resume container styling */
+  .resume-container {
+    background-color: #ffffff;
+    width: 800px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-size: 16px;
+  }
+  
+  /* Header styling */
+  header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  /* Profile section styling */
+  .profile-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .profile-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Section title styling */
+  h3 {
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Section content styling */
+  p, ul, table {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Education table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  
+  table th,
+  table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  
+  /* Lists for skills and hobbies */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  ul li:last-child {
+    border-bottom: none;
+  }
+  
+  ul li::before {
+    content: '✔';
+    margin-right: 10px;
+    color: #4CAF50;
+  }
+  
+  /* Skill level label styling */
+  .skill-label {
+    font-weight: bold;
+    color: #2C3E50;
+    margin-right: 10px;
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    .resume-container {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .profile-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-image {
+      margin-bottom: 1rem;
+    }
+  }
+  
